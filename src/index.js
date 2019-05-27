@@ -5,7 +5,7 @@
  * @format
  * @flow
  */
-
+import './config/ReactotroConfig';
 import React from 'react';
 
 import Routes from './routes';
