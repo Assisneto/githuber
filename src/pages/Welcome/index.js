@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import AsyncStorage from '@react-native-community/async-storage';
 import {
   View,
@@ -13,6 +14,12 @@ import api from '../../services/api';
 import styles from './styles';
 
 export default class Welcome extends Component {
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func,
+    }).isRequired,
+  };
+
   state = {
     username: '',
     loading: false,
