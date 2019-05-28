@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { View } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import Header from '../../Header';
-// import { Container } from './styles';
 
 const Repositories = () => (
   <View>
@@ -10,4 +10,7 @@ const Repositories = () => (
   </View>
 );
 
+Repositories.navigationOptions = {
+  tabBarIcon: ({ tintColor }) => <Icon name="list-alt" size={20} color={tintColor} />,
+};
 export default Repositories;
