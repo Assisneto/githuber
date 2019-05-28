@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
-import { colors, metrics } from '../styles/index';
+import { colors, metrics } from '../../styles/index';
 
 const styles = StyleSheet.create({
   container: {
