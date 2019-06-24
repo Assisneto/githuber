@@ -8,17 +8,16 @@ import styles from './styles';
 const RepositoryItem = ({ repository }) => (
   <View style={styles.container}>
     <Text style={styles.title}>{repository.full_name}</Text>
-
-    <View styles={styles.infoContainer}>
-      <View styles={styles.info}>
+    <View style={styles.infoContainer}>
+      <View style={styles.info}>
         <Icon name="star" size={12} style={styles.infoIcon} />
         <Text style={styles.infoText}>{repository.stargazers_count}</Text>
       </View>
-      <View styles={styles.info}>
+      <View style={styles.info}>
         <Icon name="code-fork" size={12} style={styles.infoIcon} />
         <Text style={styles.infoText}>{repository.forks_count}</Text>
       </View>
-      <View styles={styles.info}>
+      <View style={styles.info}>
         <Icon name="eye" size={12} style={styles.infoIcon} />
         <Text style={styles.infoText}>{repository.watchers_count}</Text>
       </View>
@@ -34,4 +33,5 @@ RepositoryItem.propTypes = {
     watchers_count: PropTypes.number,
   }).isRequired,
 };
+
 export default RepositoryItem;
